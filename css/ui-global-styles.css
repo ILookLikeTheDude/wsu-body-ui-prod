@@ -16,11 +16,20 @@
   max-width: none !important;
 }
 
+/*note about title-override: it doesn't have any properties unto itself, it simply adds another level of specificity that makes it easier to override the !important*/
 .page-title.title-override {
   color: #492365;
   font-family: "tradegothicltstd-boldext", sans-serif;
   margin: 1em;
   text-align: center;
+  font-size: 2rem;
+}
+
+.page-title--basic.title-override {
+  color: #492365;
+  font-family: "tradegothicltstd-boldext", sans-serif;
+  margin: 1em;
+  text-align: left;
   font-size: 2rem;
 }
 
@@ -289,6 +298,13 @@
 .tgb-text {
   font-family: "tradegothiclt-bold", sans-serif;
   font-size: 1.2em;
+}
+
+.text-squish {
+  letter-spacing: -2px;
+}
+.text-stretch {
+  letter-spacing: 2px;
 }
 
 /**

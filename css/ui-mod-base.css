@@ -1,3 +1,4 @@
+/*v1.4.2*/
 /**
 *** align content within container
 **/
@@ -579,7 +580,7 @@ card-bio
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 .card-module__header {
   display: flex;
@@ -615,6 +616,7 @@ card-bio
 .card-module__button {
   display: block;
   background-color: #492365;
+  margin-top: auto;
 }
 .card-module--centered .card-module__content {
   display: flex;
@@ -1056,6 +1058,9 @@ card-bio
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
+}
+.card-personnel__header-image__image {
+  width: 100%;
 }
 .card-personnel__title.title-override {
   background-color: #492365;
@@ -1552,7 +1557,7 @@ color-background-box
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  justify-content: center;
+  justify-content: start;
 }
 .feature-box__header-image__image {
   width: 100%;
@@ -1580,6 +1585,16 @@ color-background-box
 .feature-box__button {
   background-color: #492365;
   align-self: center;
+  margin-top: auto;
+}
+.feature-box__link {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.feature-box__link__button {
+  align-self: initial;
 }
 .feature-box.-shadow {
   box-shadow: 0 0 10px 2px #ccc;
@@ -1590,7 +1605,7 @@ color-background-box
   }
 }
 .feature-box.-outline {
-  border: 1px solid rgba(77, 70, 77, 0.3);
+  border: 2px solid rgba(77, 70, 77, 0.3);
 }
 .feature-box.-no-content {
   padding-bottom: 0;
@@ -1781,7 +1796,7 @@ color-background-box
   padding: 0.5rem 0;
 }
 .feature-box-alt.-outline {
-  border: 1px solid rgba(77, 70, 77, 0.3);
+  border: 2px solid rgba(77, 70, 77, 0.3);
 }
 
 /**
@@ -2830,7 +2845,7 @@ a.nav-onpage-icon__link {
 **/
 .page-title-shadow {
   padding: 35px 0;
-  box-shadow: 0 6px 18px 4px rgba(129, 118, 129, 0.4);
+  box-shadow: 0 16px 17px -8px rgba(129, 118, 129, 0.4);
 }
 .page-title-shadow__text {
   text-align: center;
@@ -2967,3 +2982,46 @@ a.nav-onpage-icon__link {
 .text-box.-gray .text-box__text, .text-box--gray .text-box__text {
   color: #575047;
 }
+
+/** card-mini module **/
+.card-mini {
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.card-mini:hover, .card-mini:focus, .card-mini:focus-within {
+  transform: scale(1.05);
+}
+.card-mini a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: #492365;
+}
+.card-mini a:visited {
+  color: #492365;
+}
+.card-mini__header-image {
+  min-width: 60px;
+}
+.card-mini__content {
+  padding-left: 15px;
+  font-family: "tradegothiclt-light", sans-serif;
+  font-size: 1em;
+  min-width: 0;
+}
+.card-mini__content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 50px;
+  margin-bottom: 0;
+}
+.card-mini__link-arrow {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 12px;
+}
+
+/*# sourceMappingURL=ui-mod-base.css.map */
